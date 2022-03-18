@@ -92,7 +92,7 @@
     <div id="Aaditi" class="tabcontent">
         <h1><center>HOLI WITH AADITI</center></h1>
         <center><img id="pict" src="aaditi.png" style="width: 200px; height: 200px;"></center><br><br>
-        <button id = "holin" onclick="document.getElementById(pict).innerHTML='aaditih.jpg'" style="position: relative;left: 45%;"><b>Apply Holi</b></button>
+        <button id = "holin" onclick="changeImage1()" style="position: relative;left: 45%;"><b>Apply Holi</b></button>
     </div>
 
     <div id="Abhinav" class="tabcontent">
@@ -210,6 +210,12 @@
             }
             document.getElementById(personn).style.display = "block";
             desgin.currentTarget.className += " active";
+        }
+        function changeImage1()
+        {
+        var img = document.getElementById("pict");
+        img.src="aaditih.jpg";
+        return false;
         }
     </script>
 </body>
